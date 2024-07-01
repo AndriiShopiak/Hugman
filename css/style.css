@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;900&family=Suez+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+}
+.flex_con {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  border: 3px solid red;
+  max-width: 1000px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.left_img {
+  max-width: 250px;
+}
+.left_title {
+  margin-top: 25px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 500px;
+}
+.question {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  height: 50px;
+}
+.key_btn {
+  background: blue;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.keyboard_con {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.answer_field {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.answer_field div {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  transition: all .6s ease;
+}
+.icorect_field {
+  font-size: 25px;
+}
+.icorect_field span {
+  color: red;
+  font-weight: bold;
+}
+.loose_btn {
+  border: 2px solid black;
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: aquamarine;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .6s ease;
+}
+.loose_btn:hover {
+  background: rgb(102, 151, 135);
+  color: white;
+}
+.madal_con {
+  background: darkslategrey;
+  position: absolute;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.loose_title {
+  font-size: 30px;
+}
+@media(max-width: 906px) {
+  .flex_con {
+    flex-direction: column;
+    height: initial;
+  }
+  .question {
+    text-align: center;
+    height: 65px;
+  }
+}
+@media(max-width: 380px) {
+  .flex_con {
+    padding: 0;
+  }
+}
