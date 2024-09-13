@@ -13,6 +13,7 @@ let modalTabCon = document.createElement("div");
 let playAgainBtn = document.createElement("button");
 let incorectCount = 0;
 let winSound = new Audio("audio/3.mp3");
+winSound.volume = 0.3;
 let userLose = new Audio("audio/4.mp3")
 
 // Add class
@@ -226,6 +227,7 @@ function searchLetter (letterName) {
 
     // sound effect
     let errorSound = new Audio("audio/1.mp3");
+    errorSound.volume = 0.3;
     if (incorectCount <= 6 ) {
       errorSound.play();
     }
